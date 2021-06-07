@@ -1,0 +1,261 @@
+/* Estrutura do site
+*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #fff url(https://bl3302files.storage.live.com/y4pV-lO6uqWWA-sZayVaVdPP2Aau52SkYjCMvOgo8x1k7sZkfia_dnSP7Y1I0ikTDWSWdLjX1faoolSciu-f3lBs-ZWTCORAvgf96OakWfIbxRliQnmSmwszbjoQ6aCgIIGWdB7UyphFB3JgGCzS_Ryzt6q3tELSpIyMfw0D_EQjq-ewdx_aEgb8o0QlQSQBMn9AYbK18fRJkKAgpXAls8H6NTqssEbu8Jdckw-6tY3wmk/fundo.png?psid=1&width=258&height=233) repeat-x;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#topo {
+	height: 150px;
+	background: url(https://bl3302files.storage.live.com/y4p3DlyervKFSslC9GCX8Wk6VHzVRzyTbBeNKk01eXCO2GH9WFmi_d8P6k4ih_miN35OOSTbss_4mjbqalpu70R7k-zGa3YlVctXIcsHjZLzkxvKaQp-6QreIFh-U_PG-aradX5QnRXL6_jymrx57opn-yFPJrQwLFQ3UucNaREnZGC23bRabvgbDpxfjQlZWhHR02_yJ_2-DhzpmSsClTCzG1RvNKbdNaETyAEAiJfcsU/detalhe-topo.png?psid=1&width=176&height=179) no-repeat right top;
+	padding-top: 25px;
+	/*border: 1px solid red;*/
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(https://bl3302files.storage.live.com/y4pKqvJki31FvBO8INZfJfA6dqotqak1Se0BdSx6w3Df_VNRMuKLpVMUN9bYJOm2Af-wxHr0ViHfRVFTX83I8zMqRkKQxdAhAzNTXJkchxsrjkNr8qw9Amh0ISfxAHoj08w5T2jM6IqaUG7DeUb7SBmoCSXCgQKHIx0PM4ieAHr-TaLxm1wW8I1zUFCUpnaD8htCJpHLCMT_UN9ppPqy9jqsEz1TtjN-RIwCHMN1Jxgdxk/logo.png?psid=1&width=152&height=66) no-repeat center;
+	text-indent: -3000px;
+}
+
+/* Barra de navegação
+*/
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover {
+	color: #e50040;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#topo ul {
+	margin-top: 30px;
+	background: #b10333;
+	float: left;
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(https://bl3302files.storage.live.com/y4p4Man_z1KS0JNxsAOUVzqguxrCV7iyf_hDRfDsSVyqSE1Uu6oqayLk0rgJ7cj-3LY_DdaWXh56QIdsbHfCO0LAaRCODSHVePgscMOClHTqLrcJgI5iGO34weR-j69br-vhW9cxLdFgFkksl9tPLJyRKNVOhizrEqn79IUMTSm4FOzekuFfyn0eiHMuauuqnclS_N6RJUi6WkQOm5i6FMx4162vFrg5u1EQqouoUDyu68/divisor.png?psid=1&width=2&height=16) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+	background: none;
+}
+
+#topo ul a:hover {
+	color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil, 
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos 
+{
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+/* Configura layout de três colunas */
+#conteudo {
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+#primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px ;
+}
+
+#duas-colunas #primario {
+	width: 555px;
+}
+
+#uma-coluna #primario {
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+/*Caixa*/
+.caixa {
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url(https://bl3302files.storage.live.com/y4p-REQHYPHSOhHsKm9swgVeGZeGLrufaOf_yO2eZM9_gOxi6-WrhkKc-CkFX8Xzq_QqkjS-cwJMN0I862rVB4RKOBrKEnxlMD9H1TbRfqymbSp5i_sP9XUvu3VdMdqBZa_aft1_1PTSp9qTbbatYTEZjg2oDI-MWQjLKyWjgz-Y81WH9W52sS8Ghtw2BMZq30OivD6iTP7x45tMkAbq7fHLCOHqgauFifcJ82XuKcHzAY/fundo-caixa.png?psid=1&width=80&height=56);
+}
+
+h2 {
+	font-size: 1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/* Formatar menus laterais
+*/
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(https://bl3302files.storage.live.com/y4pRbAME1hVg4GrksHmLSodeux7z1t4MgM5KB4hF-UEyGrbbopflew0fvpdFdkn4UoiRWKrfdUrwN6JH9CJoBo47QbAz2S40CWNiw4_XBszAkXRqzCAoBPaVp7PRNmwb_POJp9hev3g9qzv8odIDdAO4YJ3kwVRrHma9ys-OHfWfEHjJyQ4uv3ATn9lavHXXsl71gg7xneBOjv32PSWQFX66540OJI9OdLe8G2GNO8RxLQ/marcador.png?psid=1&width=17&height=10) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/* Formatando formulários
+*/
+label {
+	display: block; 
+	cursor: pointer;
+}
+
+input {
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+}
+
+.entrevista h3 {
+	background: #de003e;
+}
+
+/*Formatando lista de notícias*/
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc; 
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+
+/*Rodape*/
+#container-rodape {
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

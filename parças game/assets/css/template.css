@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color:#030820;
+}
+body{
+    width: 1140px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 30pX;
+    align-items: center;
+    background-color: #121038;
+    
+}
+.container h3{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 300px;
+}
+.ball{
+    width: 15px;
+    height: 15px;
+    background-color:#66FED1;
+    border-radius: 500px;
+    margin-left: 8px;
+
+}
+.ball2{
+    flex-wrap: wrap;
+    width: 15px;
+    height: 15px;
+    background-color:#3a277c; 
+    border-radius: 500px;
+    margin-left: 8px;
+}
+.container-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    
+}
+nav img{
+    justify-content: baseline;
+    width: 150px;
+    height: auto;
+    animation-duration: 5s;
+    animation-name:fadein;
+}
+nav input{
+    border:2px solid #121038;
+    border-radius: 250px; 
+    font-size: 15px;
+    background-color: #030820;
+    color: white;
+    width: 300px;
+    padding: 8px 10px 8px 10px;
+    margin-left:20px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+.botao1{
+    background-color: #030820;
+    border-radius: 15px;
+    border:2px solid #9A77CB;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    float: right;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.botao2{
+    background-color: #9A77CB;
+    border-radius: 15px;
+    border:2px solid #9A77CB;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    animation-name: transbutton;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.botao3{
+    border:2px solid #9A77CB;
+    border-radius: 250px; 
+    font-size: 15px;
+    background-color: #66FED1;
+    width: 300px;
+    padding: 8px;
+    margin-left:350px;
+    animation-name:moveright;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px; 
+}
+.usuario{
+    background:#121038;
+    width: 160px;
+    height: 140px;
+    border-radius: 5px;
+    margin-left: 40px;
+    font-family: arial
+}
+.usu{
+    color:#66FED1;
+    text-align: left;
+    background-color: #3a277c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.bar{ 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: transformer;
+    animation-fill-mode: forwards;
+    background-color: #3a277c;
+    height:20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin: 10px 5px 10px 5px;
+}
+.sabermais{
+    background:#121038;
+    width: 140px;
+    height: 110px;
+    border-radius: 5px;
+    margin-left: 10px;
+    animation-duration: 5s;
+    animation-name:fadein;
+}
+.botao4{
+    margin-top:120px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px; 
+    border: 2px solid #3a277c;
+    font-size: 12px;
+    background-color: #3a277c;
+    color: white;
+    width: 90px;
+    padding: 2px;
+    text-align: left;
+}
+.usuario2{
+    background:#030820;
+    width: 160px;
+    height: 140px;
+    border-radius: 5px;
+    margin-left: 40px;
+    font-family: arial;
+}
+.bar2{
+    background-color: #030820;
+    height:20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin: 10px 5px 10px 5px;
+}
+@keyframes transformer {
+    from {background-color:#3a277c}
+    to {background-color: yellow;}
+  }
+  @keyframes transbutton {
+    from {background-color:#9A77CB}
+    to {background-color: #030820;}
+  }
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        OPACITY:1;
+    }
+}
+@keyframes moveright{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(50px);
+}
+}
+@media (min-width:450px) and (max-width:800px){
+body{
+    max-width:800px;
+}
+.botao1 {
+    background-color: #030820;
+    border-radius: 15px;
+    border: 2px solid #9A77CB;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    float: right;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+}
+@media (max-width:450px){
+    body{
+        max-width:450px;
+    }
+    .botao3 {
+        border: 2px solid #9A77CB;
+        border-radius: 250px;
+        font-size: 15px;
+        background-color: #66FED1;
+        width: 300px;
+        padding: 8px;
+        margin-left: 10px;
+        margin-top: 20px;
+        animation-name: moveright;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+.container h3 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 80px;
+}
+nav img {
+    justify-content: baseline;
+    margin-left:100px;
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    animation-duration: 5s;
+    animation-name: fadein;
+}
+.container-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.usuario {
+    background: #121038;
+    width: 160px;
+    height: 140px;
+    border-radius: 5px;
+    margin-right: 85px;
+    margin-bottom: 10px;
+    font-family: arial;
+}
+.sabermais {
+    background: #121038;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    animation-duration: 5s;
+    animation-name: fadein;
+}
+}

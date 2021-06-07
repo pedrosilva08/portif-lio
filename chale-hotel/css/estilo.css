@@ -1,0 +1,229 @@
+/* Estrutura do site
+*/
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+	background: #fff url(../imagens/bg.png);
+	margin: 15px;
+}
+
+#container {
+	background: #ede9cc url(https://bl3302files.storage.live.com/y4pZrjj4y5SahqGapft_twJuQM_81nMmnk3wWuxlSprw6dd5dtRX3x_RG8MM-Qe9y4MFVuCLfJWSM6qo5wGhvLzr93GmjOjd_UHY7vzdpBGOKwrrww2YRlICio-H5lgRZbUyjMPApEJehRBggVN0-dQZQDIssbvJ-uKYm55p29_C5FtEUKBfJP2OkwMUPrjCZ1wt2iyxafOjDgJ_9G19SqJDioGtY5JCfH9OROttFgkLRQ/bg-container.png?psid=1&width=1280&height=160) top center repeat-y;
+	margin: 0 auto;
+	min-width: 740px;
+	max-width: 1180px;
+}
+
+#topo {
+	position: relative;
+	background: #dbcd87;
+	height: 15.4em;
+	min-height: 250px;
+}
+
+#area-logo {
+	position: absolute;
+	background: url(https://bl3302files.storage.live.com/y4phbl2KvBgtOeV9WF-D3g-TJ902jEIWA1Szbeatd8YuCbmC0grUR0GrAsTTrtWthOsuYKu9B8PP0gJjKDCczg_eVrnixppMrkYXi_H9WecHnaz7EeZJGzXU6IV7z8zXJjH8uYQQ1rO_5pdP0kKgzp2HrKXrXXYeBBn3HCGDFc0w7vt1PnYLbD56tScg7cfFMPKw2NGIXoTO9482d_2jckd54KqDr5h-zGF0Qf5EibmHY8/topo-imagem-principal.png?psid=1&width=798&height=250) no-repeat;
+	width: 100%;
+	height: 250px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.logo a {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 3;
+	background: url(https://bl3302files.storage.live.com/y4pN0OGtniM3X0xf_x8recPM7XB5PXQedrEowm5_KU1WQuCbangDAH1G6gTs6ogYYC1H4Ebh716cRIcbsb78HtUg1reStv4FAAQO2Q-FmxOAUS5Ta7_e7-W4XbxvlpjsGA_IPjxoB1Sk0iksqHwu2eeB6vX52i04GAi6rawvopNVxwqwFRqbOxV6fxsdp92oVXeIFt6OHiC1YotNjj9SFUBW3V0BeqQ6nokx6McsHIsi3Q/logo.png?psid=1&width=151&height=66) no-repeat;
+	width: 151px;
+	height: 66px;
+	text-indent: -9000px;
+}
+
+#area-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(https://bl3302files.storage.live.com/y4p7ZQ2EZnKmpAs8qmGvCjLg8NRAu8vTcz-wQDvQtkCQIZLnYIFpcCb39m2nPIawRlFPnhMxDREIHDIkjZv6ht0xU1aP4Aun7vfX_Zj5f5FCIcdsMhjIcDqBEvmFnNG0h2U_YiTx1i6Vo-XT7Q7W3q9lBGTDJgZqbJOayK0GIxije8bJoSqc8OTc7Ss-wmrwYiEfVIB-fDjUz9OVm3yJUi0uxSPjtccmkv2Ju_ZNF1oTQM/topo-imagem-lateral.png?psid=1&width=639&height=250) no-repeat; ;
+	width: 450px;
+	height: 250px;
+	z-index: 2;
+}
+
+#conteudo-menu {
+	margin-left: 90px;
+	margin-right: 15px;
+	padding-top: 15px;
+}
+
+#menu-locais {
+	border-bottom: 1px solid #b5ab56;
+	border-top: 1px solid #b5ab56;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.7em;
+	color: #8b8448;
+}
+
+#menu-locais .locais {
+	float: left;
+	line-height: 2.1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.reserva {
+	text-transform: uppercase;
+	background: #a29750;
+	color: #fff5b0;
+	padding: 5px 10px;
+	float: right;
+}
+
+/* Barra de navegação vertical
+*/
+#menu {
+	margin-top: 15px;
+}
+
+ul {
+	list-style: none;
+}
+
+ul#navegacao {
+	float: left;
+}
+
+ul#navegacao a {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 5px;
+	color: #6e672c;
+	line-height: 30px;
+}
+
+ul#navegacao a:hover {
+	background: #fdf6be;
+}
+
+.depoimento {
+	width: 226px;
+	height: 164px;
+	float: right;
+}
+
+/* Área de conteúdos
+************************/
+#area-principal {
+	float: left;
+	width: 50%;
+	background: url(https://bl3302files.storage.live.com/y4pV_OIMVg1XWGq2gNRz-aTGAOVok9r2KNDMmHBEqbqZfVOw5fYS5DXE9LoKKPdOfRlkiwzRUwcC12RJahL7m3rt-eagRUhyZT9tyMk0s-5mMfriYsoTx3MOHygHT4FVajZ7O8ezsUcs8s5Xz74f-OhZnyVj9cT68jGIE7mcO81-Jh0JtrYPrB0fyGFHH2DdLZBU-RPogBYrqmiH4lVjx--ZKcp7p7P0RB9T1iAuSflQlI/bg-area-principal.png?psid=1&width=30&height=48) top left repeat-x;
+	padding: 15px 0px;
+}
+
+#area-lateral {
+	float: right;
+	width: 50%;
+	background: url(https://bl3302files.storage.live.com/y4pnAvodnThxOLZp4XaBv4oqkq-6g3oVIfjRhSXGi5OAAWdtfliNfJViT6YCr6SGtezAm_9m54Cag72asoqxYk6wcDfhsq-YxeWHuO137jB8YmXi3v_gGVWRO1nle5oW4CGMnqkZSE_c5dcO-guzvP9qcJXN0-6myXC9HnYvzmqJe7q4kwRzL2kP4kLMss2-oD4osZXn3s6PZG1CoGGGgIo0YV-zacwX35fF10rEyrXK1I/bg-area-lateral.png?psid=1&width=30&height=48) top left repeat-x;
+	padding: 20px 0px;
+}
+
+.conteudo {
+	margin: 0 auto;
+	width: 90%;
+}
+
+#rodape {
+	clear: both;
+	padding: 16px;
+	background: #fff url(https://bl3302files.storage.live.com/y4pxQT_BWPB444oQOyAbSNf2VhXdWXpWohJMxdX1jzSpGIn9gOSdgYFXYh4zpE_u5eal00gY5ztqFofrLC0d8ara2eIhEuz0kbp6XtTNVy-Nh-hB2cJcBgLwX1BDzH-FVSCjbnJSezH5SAaGuRR1SXZvddTL8TuF_eH53mEBcSYtFMhVxc9cO75umDK4qAn-c1OkRLY1ssYDUi1YEDzm5B8hyV0GZd2gsfTMkjhLi8wVD0/bg-rodape.png?psid=1&width=72&height=5) repeat-x top;
+	color: #7d7640;
+}
+
+
+/* Formatações de textos
+*/
+h2 {
+	color: #7d7640;
+	font-size: 1.1em;
+	padding: 5px 0px;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+/* Formatações da area lateral
+*/
+#beneficios li {
+	padding: 8px;
+	border-bottom: 1px solid #f3efcb;
+	height: 6em;
+}
+
+#beneficios li a img {
+	float: left;
+	margin-right: 8px;
+}
+
+#beneficios li a p {
+	color: #000;
+	font-size: 0.8em;
+}
+
+#beneficios li a h3 {
+	font-size: 1em;
+	color: #615b2d;
+	padding: 5px 0;
+	background: url(https://bl3302files.storage.live.com/y4pDxlWqaaDDVhIAj-Dh3fJ7p9YnMShWWOOM_FvnqWBJwbIshesMV4X6nD0aCuFbQ3_k6kJkVTUYnC2f7QHN1GnNzLrDTj-rXVpuo7OeRglRX9v9_bEJrPVJmmaQaCeP4gAsvO2BIaIs9UFHFpneOAymsUqaCDyfHvRZoJ3cKtwGv1I-hBPHaFjuHbpR5e7Gk-G0QXdpqJbUZgqM6bWnkreYcP3UHHeCCn2xBjekvLHA9Y/ornamento.png?psid=1&width=50&height=20) no-repeat center right;
+}
+
+#beneficios li:hover {
+	background: #f6f3d6;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
